@@ -8,10 +8,10 @@ import { GlobalCss } from './styles'
 function App() {
   return (
     <>
-      <GlobalCss />
+      <GlobalCss/>
       <Cabecalho />
-      <Hero />
-      <div className='container'>
+      <Hero/>
+      <div className="container">
         <ListaVagas />
       </div >
     </>

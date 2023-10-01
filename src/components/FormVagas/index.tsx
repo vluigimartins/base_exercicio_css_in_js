@@ -4,7 +4,7 @@ import { FormContainer, PesquisarButton, CampoPesquisa } from './styles'
 
 type Props = {
   aoPesquisar: (termo: string) => void;
-};
+}
 
 const FormVagas = ({ aoPesquisar }: Props) => {
   const [termo, setTermo] = useState<string>('');
@@ -12,7 +12,7 @@ const FormVagas = ({ aoPesquisar }: Props) => {
   const aoEnviarForm = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     aoPesquisar(termo.toLocaleLowerCase());
-  };
+  }
 
   return (
     <FormContainer onSubmit={aoEnviarForm}>
@@ -25,7 +25,7 @@ const FormVagas = ({ aoPesquisar }: Props) => {
         Pesquisar
       </PesquisarButton>
     </FormContainer>
-  );
-};
+  )
+}
 
 export default FormVagas;

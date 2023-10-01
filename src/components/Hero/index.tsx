@@ -1,10 +1,9 @@
 import React from 'react';
-import { HeroContainer, Overlay, Container, HeroTitle } from './styles'
+import { HeroContainer, Container, HeroTitle } from './styles'
 
 const Hero = () => (
   <HeroContainer>
-    <Overlay />
-    <Container>
+    <Container className='container'>
       <HeroTitle>
         As melhores vagas para tecnologia, design e artes visuais.
       </HeroTitle>
